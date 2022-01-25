@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Changer les propriétés de <span class='hl'>l'image</span></h2>
+
+  <div class="controls">
+    <label for="spacing">Bordure :</label>
+    <input id="spacing" type="range" name="spacing" min="1" max="120" value="10" data-sizing="px">
+
+    <label for="blur">Flou :</label>
+    <input id="blur" type="range" name="blur" min="0" max="15" value="5" data-sizing="px">
+
+    <label for="base">Couleur de base :</label>
+    <input id="base" type="color" name="base" value="#27C7BC">
+
+    <label for="rotation">Rotation :</label>
+    <input type="range" name="rotate" id="rotate" min="-180" max="180" value="0" data-sizing="deg">
+
+    <label for="width">Taille :</label>
+    <input type="range" name="width" id="width" min="100" max="1500" value="800" data-sizing="px">
+
+  </div>
+  
+
+  <div class="container">
+    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
